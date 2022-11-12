@@ -40,13 +40,20 @@ let costo = document.querySelector("#label-costo");
 
 btnCalcular.addEventListener("click", calcularTotal);
 btnBorrar.addEventListener("click", borrar);
+cantidad.addEventListener("click", calcularValor);
+categoria.addEventListener("click", calcularValor);
 
 function calcularTotal(event) {
   event.preventDefault();
   let descuento = calcularDescuento(categoria.value);  
   let valor = (TICKET - descuento) * cantidad.value;  
-  resultado.textContent = valor;
-  costo.textContent = "El costo total de los boletos es de " + valor + " $.";
+  costo.textContent = "El costo total de los boletos es de " + valor + " $.";  
+}
+
+function calcularValor(){
+    let descuento = calcularDescuento(categoria.value)
+    let valor = (TICKET - descuento) * cantidad.value;  
+    resultado.textContent = valor;
 }
 
 function calcularDescuento(categoria) {
@@ -71,6 +78,5 @@ function borrar() {
   categoria.value = "";
   resultado.textContent = "";
 }
-
 //Validacion
 
