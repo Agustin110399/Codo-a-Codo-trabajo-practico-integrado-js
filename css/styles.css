@@ -1,0 +1,14 @@
+/* NAV*/
+
+.link-tickets{
+    color: #79cf17 !important;
+}
+
+.cards-container{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.valor-ticket{
+    text-transform: uppercase;
+}
