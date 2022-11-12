@@ -13,6 +13,11 @@
     text-transform: uppercase;
 }
 
+#btnBorrar, #btnResumen{
+    background: #79cf17 !important;
+    border: #79cf17 !important;
+}
+
 
 footer{
     background:  #58769f !important;

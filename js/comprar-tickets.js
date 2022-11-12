@@ -34,6 +34,7 @@ let categoria = document.querySelector("#categoriaSelect");
 let resultado = document.querySelector("#totalPago");
 let btnBorrar = document.querySelector("#btnBorrar");
 let btnCalcular = document.querySelector("#btnResumen");
+let costo = document.querySelector("#label-costo");
 
 // 4. APLICAR LA ESTRATEGIA PARA ESCUCHAR O CAPTURAR EL EVENTO
 
@@ -43,7 +44,9 @@ btnBorrar.addEventListener("click", borrar);
 function calcularTotal(event) {
   event.preventDefault();
   let descuento = calcularDescuento(categoria.value);  
-  resultado.textContent = (TICKET - descuento) * cantidad.value;  
+  let valor = (TICKET - descuento) * cantidad.value;  
+  resultado.textContent = valor;
+  costo.textContent = "El costo total de los boletos es de " + valor + " $.";
 }
 
 function calcularDescuento(categoria) {

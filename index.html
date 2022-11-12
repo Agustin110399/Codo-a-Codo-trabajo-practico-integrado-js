@@ -140,18 +140,44 @@
                                         Borrar
                                     </button>
                                 </div>
-                                <div class="col-md mb-3">
-                                    <button type="submit" class="w-100 btn btn-lg btn-form btn-success" id="btnResumen">
-                                        Resumen
-                                    </button>
+                                <div class="col-md mb-3">                                    
+                                    <button type="button" class="w-100 btn btn-lg btn-form btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnResumen">Resumen</button>
                                 </div>
                             </div>
                         </form>
                     </section>
                 </div>
             </div>
-        </section>        
+        </section> 
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Gracias</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label" id="label-costo">El costo total es de: $</label>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">¿Quiere continuar?</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-lg btn-form btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-lg btn-form btn-success" data-bs-dismiss="modal">
+                    Continuar
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
+
 
     
 
