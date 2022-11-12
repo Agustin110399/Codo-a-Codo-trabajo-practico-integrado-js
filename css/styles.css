@@ -12,3 +12,12 @@
 .valor-ticket{
     text-transform: uppercase;
 }
+
+
+footer{
+    background:  #58769f !important;
+}
+
+footer div ul li a{
+    color: white !important;
+}
